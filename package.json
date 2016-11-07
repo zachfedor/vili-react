@@ -1,0 +1,41 @@
+{
+  "name": "vili-react",
+  "version": "0.0.1",
+  "description": "a simpler time tracker",
+  "author": "zachfedor",
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "lint": "eslint ./app ./tests --ext .js,.jsx --ignore-path .gitignore --cache",
+    "test": "echo \"you should really set up some tests\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
+    "html-webpack-plugin": "^2.24.1",
+    "html-webpack-template": "^5.4.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^0.15.0",
+    "webpack-validator": "^2.2.9"
+  }
+}
