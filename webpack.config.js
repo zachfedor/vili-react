@@ -42,7 +42,7 @@ const common = {
       {
         test: /\.jsx?$/,
         loaders: ['eslint'],
-        include: PATHS.app,
+        include: [PATHS.app, PATHS.test],
       },
     ],
     loaders: [
@@ -54,7 +54,7 @@ const common = {
       {
         test: /\.jsx?$/,
         loaders: ['babel?cacheDirectory'],
-        include: PATHS.app,
+        include: [PATHS.app, PATHS.test],
       },
     ],
   },
@@ -91,6 +91,25 @@ if(TARGET === 'start' || !TARGET) {
         multiStep: true,
       }),
     ],
+  });
+}
+
+
+/**
+ * test config
+ */
+if(TARGET === 'test') {
+  config = merge(common, {
+    devtool: 'inline-source-map',
+    module: {
+      loaders: [
+        {
+          test: /\.(js|jsx)$/,
+            loaders: ['babel?cacheDirectory'],
+            include: PATHS.test
+        }
+      ]
+    }
   });
 }
 
