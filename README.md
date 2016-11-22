@@ -18,9 +18,20 @@ The simplest and most intuitive time tracker ever.
 
 ## Other Scripts
 
-TODO: add testing framework
-
 * `npm test`
+* `npm run test:watch`
 * `npm run lint`
 * `npm run build`
+
+
+## TODO
+
+- [x] figure out react/no-render-return-value eslint rule
+- [ ] lint code before tests run
+- [x] turn Counter into a child component of App
+- [ ] create new Project component:
+  - [ ] display list of projects
+  - [ ] handle creating action
+  - [ ] handle deleting action
+  - [ ] handle action of editing name
 

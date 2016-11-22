@@ -10,13 +10,15 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "lint": "eslint ./app ./tests --ext .js,.jsx --ignore-path .gitignore --cache",
-    "test": "mocha --compilers js:babel-core/register tests/*.spec.js",
+    "lint": "eslint ./app --ext .js,.jsx --ignore-path .gitignore --cache",
+    "test": "mocha browser.js app/**/*.spec.js",
     "test:watch": "npm test -- --watch"
   },
   "dependencies": {
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -36,8 +38,11 @@
     "eslint-plugin-react": "^6.6.0",
     "html-webpack-plugin": "^2.24.1",
     "html-webpack-template": "^5.4.1",
+    "jsdom": "^9.8.3",
     "mocha": "^3.1.2",
     "react-addons-test-utils": "^15.3.2",
+    "redux-devtools": "^3.3.1",
+    "sinon": "^1.17.6",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2",
     "webpack-merge": "^0.15.0",

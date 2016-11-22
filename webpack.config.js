@@ -16,7 +16,6 @@ const ENABLE_POLLING = process.env.ENABLE_POLLING;
 const PATHS = {
   app: path.join(__dirname, 'app'),
   build: path.join(__dirname, 'build'),
-  test: path.join(__dirname, 'tests'),
 };
 
 process.env.BABEL_ENV = TARGET;
@@ -42,7 +41,7 @@ const common = {
       {
         test: /\.jsx?$/,
         loaders: ['eslint'],
-        include: [PATHS.app, PATHS.test],
+        include: PATHS.app,
       },
     ],
     loaders: [
@@ -54,7 +53,7 @@ const common = {
       {
         test: /\.jsx?$/,
         loaders: ['babel?cacheDirectory'],
-        include: [PATHS.app, PATHS.test],
+        include: PATHS.app,
       },
     ],
   },
@@ -106,7 +105,7 @@ if(TARGET === 'test') {
         {
           test: /\.(js|jsx)$/,
             loaders: ['babel?cacheDirectory'],
-            include: PATHS.test
+            include: PATHS.app
         }
       ]
     }

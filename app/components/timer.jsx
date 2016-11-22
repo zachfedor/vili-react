@@ -1,6 +1,11 @@
+'use strict';
+
 import React from 'react';
 import uuid from 'uuid';
 import { TaskList } from './task.jsx';
+
+
+// http://redux.js.org/docs/basics/ExampleTodoList.html
 
 class TimerWrapper extends React.Component {
   constructor(props) {
@@ -53,6 +58,7 @@ class TimerWrapper extends React.Component {
     );
   }
 }
+
 
 class TimerControls extends React.Component {
   render() {

@@ -1,4 +1,7 @@
+'use strict';
+
 import React from 'react';
+
 
 class TaskList extends React.Component {
   render() {
@@ -19,6 +22,7 @@ class TaskList extends React.Component {
 TaskList.propTypes = {
   tasks: React.PropTypes.object.isRequired,
 }
+
 
 class Task extends React.Component {
   render() {
