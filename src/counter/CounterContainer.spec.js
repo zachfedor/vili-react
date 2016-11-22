@@ -5,7 +5,7 @@ import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import { Provider } from 'react-redux';
 import CounterContainer from './CounterContainer';
-import Counter from '../components/Counter';
+import Counter from './Counter';
 
 
 const setup = (value = 0) => {

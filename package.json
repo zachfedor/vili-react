@@ -10,8 +10,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "lint": "eslint ./app --ext .js,.jsx --ignore-path .gitignore --cache",
-    "test": "mocha browser.js app/**/*.spec.js",
+    "lint": "eslint ./src --ext .js,.jsx --ignore-path .gitignore --cache",
+    "test": "mocha browser.js src/**/*.spec.js",
     "test:watch": "npm test -- --watch"
   },
   "dependencies": {

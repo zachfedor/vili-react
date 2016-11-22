@@ -1,7 +1,7 @@
 'use strict';
 
 import { expect } from 'chai';
-import counter from './counter';
+import counter from './counterReducer';
 
 
 describe('Counter Reducer', () => {

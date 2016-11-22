@@ -1,7 +1,7 @@
 'use strict';
 
 import { connect } from 'react-redux';
-import Counter from '../components/Counter';
+import Counter from './Counter';
 
 const mapStateToProps = (state) => {
   return {
